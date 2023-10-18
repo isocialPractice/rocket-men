@@ -1,0 +1,353 @@
+html, body {
+ padding: 0;
+ margin: 0;
+ background-color: white;
+}
+h1 {
+ display: inline-block;
+ margin-left:30px;
+ top: 20px;
+}
+img {
+ margin-left: 10px;
+ top: 9px;
+ display: inline-block;
+ position: relative;
+ outline: 3px solid black;
+ border-radius: 20px;
+ outline-offset: 6px;
+ overflow: visible;
+ background-color: rgba(0, 0, 0, .10);
+}
+#box {
+ position: relative;
+ top: 90%;
+ width: 25px;
+ height: 4%;
+ /*background-image: url('../Image/SpaceShip.png');*/
+ background-image: url('../Image/SpaceShip.svg');
+ background-size: cover;
+ background-color: transparent;
+ background-position: center;
+}
+#left {
+ display: block;
+ position: absolute;
+ background: black;
+ left: 510px;
+ top: 0%;
+ width: 240px;
+ height: 400px;
+}
+#clock {
+ display: block;
+ position: relative;
+ text-align: center;
+ height: 30%;
+ width: 100%;
+ border: none;
+}
+#mins {
+ display: block;
+ position: relative;
+ height: 50%;
+ width: 100%;
+ color: white;
+ text-align: center;
+ font-size: 150%;
+}
+#secs {
+ padding-top: 1%;
+ color: white;
+ display: block;
+ position: relative;
+ top: 0;
+ left: 0px;
+ width: 100%;
+ height: 30%;
+ text-align: center;
+ font-size: 100%;
+}
+#top {
+ display: block;
+ position: relative;
+ height: 50%;
+ width: 100%;
+ border: none;
+ text-align: center;
+}
+#bottom {
+ display: block;
+ position: relative;
+ bottom: 30%;
+ color: white;
+ text-align: center;
+ font-size: 150%;
+}
+#score {
+ display: block;
+ position: relative;
+ color: white;
+ text-align: center;
+ font-size: 150%;
+ border: none;
+ height: 15%;
+ width: 100%;
+ bottom: 45px;
+}
+#button {
+ display: block;
+ position: relative;
+ width: 100%;
+ height: 50%;
+ margin: auto;
+ text-align: center;
+}
+#boxLeft {
+ display: block;
+ position: relative;
+ top: 0px;
+ color: white;
+ float: left;
+ width: 33%;
+ text-align: center;
+ font-size: 100%;
+}
+#level {
+ display: block;
+ position: relative;
+ top: 0px;
+ color: white;
+ float: left;
+ left: 8px;
+ width: 30%;
+ font-size: 100%;
+ text-align: center;
+}
+#lives {
+ display: block;
+ position: relative;
+ top: 0px;
+ color: white;
+ float: left;
+ width: 30%;
+ text-align: center;
+ font-size: 100%;
+}
+#easy {
+ display: block;
+ position: absolute;
+ left: 4%;
+ top: 50%;
+ width: 28%;
+ height: 30px;
+ padding-top: 5px;
+ background-color: green;
+ color: white;
+ text-align: center;
+ cursor: pointer;
+}
+#easy p {
+ position: relative;
+ bottom: 15px;
+}
+#hard {
+ display: block;
+ position: absolute;
+ left: 37%;
+ top: 50%;
+ width: 28%;
+ height: 30px;
+ padding-top: 5px;
+ background-color: white;
+ text-align: center;
+ cursor: pointer;
+}
+#hard p {
+ position: relative;
+ bottom: 15px;
+}
+#extreme {
+ position: absolute;
+ left: 70%;
+ top: 50%;
+ width: 28%;
+ height: 30px;
+ padding-top: 5px;
+ background-color: white;
+ text-align: center;
+ cursor: pointer;
+}
+#extreme p {
+ position: relative;
+ bottom: 15px;
+}
+#start {
+ display: block;
+ position: relative;
+ float: left;
+ left: 10%;
+ top: 65%;
+ width: 35%;
+ height: 30px;
+ padding-top: 5px;
+ background-color: green;
+ color: white;
+ text-align: center;
+ cursor: pointer;
+}
+#start p {
+ position: relative;
+ bottom: 30px;
+}
+#stop {
+ display: block;
+ position: relative;
+ float: right;
+ right: 10%;
+ top: 65%;
+ width: 35%;
+ height: 30px;
+ padding-top: 5px;
+ background-color: white;
+ color: black;
+ text-align: center;
+ cursor: pointer;
+}
+#stop p {
+ position: relative;
+ bottom: 30px;
+}
+.good {
+ width: 20px;
+ height: 20px;
+ /*background-color:#add123;		*/
+ position: absolute;
+ top: -200px;
+}
+.newBlock {
+ width: 20px;
+ height: 20px;
+ background-color: #add123;
+ /*background-image :url( '../Image/SpaceManinaBubble.png'); */
+ background-image: url('../Image/Spaceman.svg');
+ position: absolute;
+ top: -50px;
+ background-size: 100% 100%;
+ border-radius: 1000000px;
+}
+.bad {
+ width: 20px;
+ height: 20px;
+ /*background-color:red;		*/
+ position: absolute;
+ top: -200px;
+}
+.badBlock {
+ width: 20px;
+ height: 20px;
+ background-color: transparent;
+ /*background-image :url( '../Image/Rock.png'); */
+ background-image: url('../Image/Rock.svg');
+ background-size: cover;
+ position: absolute;
+ top: -50px;
+ border-radius: 0px;
+}
+.ugly {
+ width: 20px;
+ height: 20px;
+ /*background-color:yellow; */
+ position: absolute;
+ top: -200px;
+}
+.ugliest {
+ width: 20px;
+ height: 20px;
+ /* background-color:yellow; */
+ position: absolute;
+ top: -200px;
+}
+.lifeBlock {
+ width: 30px;
+ height: 30px;
+ /*background-image :url('../Image/Mushroom.png'); */
+ background-image: url('../Image/Mushroom.svg');
+ background-color: transparent;
+ background-size: cover;
+ position: absolute;
+ top: -50px;
+ border-radius: 1000000px;
+}
+.noLifeBlock {
+ width: 30px;
+ height: 30px;
+ /*background-image :url('../Image/BadMushroom.png');*/
+ background-image: url('../Image/BadMushroom.svg');
+ background-color: transparent;
+ background-size: cover;
+ position: absolute;
+ top: -50px;
+ border-radius: 1000000px;
+}
+.hidden {
+ display: none;
+}
+#frame {
+ display: block;
+ position: relative;
+ height: 400px;
+ width: 500px;
+ top: 0%;
+ left: 5px;
+ background-color: black;
+ background-repeat: repeat;
+ background-position: center;
+}
+#title {
+ display: block;
+ position: relative;
+ color: white;
+ width: 500px;
+ height: 30px;
+ font-size: 150%;
+ background-color: black;
+ text-align: center;
+}
+#inner {
+ display: block;
+ position: relative;
+ height: 370px;
+ width: 500px;
+ cursor: pointer;
+ background: white;
+}
+#other {
+ display: block;
+ position: relative;
+ height: 370px;
+ width: 500px;
+ background-image: url('../Image/SpaceBattle.gif');
+ background-color: transparent;
+ background-position: center;
+ border-radius: 0px;
+}
+#game {
+ display: block;
+ position: fixed;
+ margin: auto;
+ border: 3px solid black;
+}
+.center {
+ display: block;
+ position: relative;
+ left: 10px;
+ text-align: center;
+}
+.game {
+ display: block;
+ position: absolute;
+ text-align: center;
+ width: 750px;
+ height: 400px;
+}
