@@ -327,7 +327,7 @@ img {
  position: relative;
  height: 370px;
  width: 500px;
- background-image: url('../Image/SpaceBattle.gif');
+ background-image: url('Image/SpaceBattle.gif');
  background-color: transparent;
  background-position: center;
  border-radius: 0px;
